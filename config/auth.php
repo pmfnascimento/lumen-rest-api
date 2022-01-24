@@ -15,6 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'api',
+        'passwords' => 'users',
     ],
 
     /*
@@ -36,7 +37,7 @@ return [
 
     'guards' => [
         'api' => [
-            'driver' => 'passport',
+            'driver' => 'jwt',
             'provider' => 'users'
         ]
     ],

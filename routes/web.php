@@ -31,6 +31,6 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         $router->post('/posts', 'PostController@store');
         $router->put('/posts/{id}', 'PostController@update');
         $router->delete('/posts/{id}', 'PostController@destroy');
-        $router->post('/logout', 'AuthController@logout');
+        $router->post('logout', 'AuthController@logout');
     });
 });
